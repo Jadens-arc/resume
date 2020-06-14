@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style>
+      @media only screen and (max-width: 768px) {
+        #titleBar {
+          flex-direction: column;
+          
+        }
+      }
+      .box {
+        transition: all 0.8s ease;
+      }
+      .box:hover{
+        transform: translateY(-7px);
+        box-shadow: none;
+      }
+    </style>
+    <link type="image/png" rel="icon" href="https://i.ibb.co/C2FR5Bd/path137.png"></link>
+  </head>
+  <body class="container is-fluid"
+    style="display: flex; flex-direction: column; align-content: space-between; width:100%; align-items: center;">
+    <script src="app.js"></script>
+    <div class="box" style="width: 50vw; height: 50vh; margin-top: 25vh;">
+      <h1 class="" style="width: 40vw; font-size: 4vw;"> Hi, I'm Jaden Arceneaux...</h1>
+      <a onclick="googleLogin()" class="button is-primary is-light" 
+      style="width: 40vw; font-size: 3vw;"> Learn More About Me</a>  
+    </div>
+  </body>
+</html>

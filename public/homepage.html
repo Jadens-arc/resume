@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Jaden</title>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.15.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.15.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.15.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/0e4253a8ca.js" crossorigin="anonymous"></script>
+    <link type="image/png" rel="icon" href="https://i.ibb.co/C2FR5Bd/path137.png"></link>
+    <script src="homepage.js"></script>
+    <style>
+        #subElement {
+            margin-left: 30px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    
+        #mainElement {
+            margin-top: 30px;
+            margin-bottom: 0px;
+            font-weight: bold;
+        }
+        .button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body onload="loadInfo()" class="container is-fluid">
+    
+    <br>
+    <div id="titleCard">
+        <div class="box">
+            <h1 class="title" id="titleMsg"></h1>
+            <p class="subtitle" id="userInfoMsg">Hope You Enjoy</p>
+        </div>
+    </div>
+    <br>
+
+    <div class="tile is-ancestor">
+        <div class="is-10 is-horizontal"></div>
+        <div class="tile is-3 is-vertical is-parent">
+                <div class="is-child">
+                    <div class="tile notification is-primary">
+                        <div class="content">
+                            <p class="title">Jaden Arceneaux</p>
+                            <div class="content">
+                                <figure class="image is-2316x2316" style="margin: auto;">
+                                    <img class="is-rounded" src="https://i.ibb.co/B3x8ryC/IMG-0262.jpg">
+                                </figure>
+                                <br>
+                                <p>
+                                    I am a passionate full stack developer from North Las Vegas, Nevada, my favorite language is Python, and I indent with spaces
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tile notification is-primary">
+                        <div class="content">
+                            <p class="title">Contact
+                                <span class="icon is-large" style="margin-left: 20px;">
+                                    <i class="fas fa-address-card"></i>
+                                </span>
+                            </p>
+                            <div class="content">
+                                <span class="icon is-small" style="margin-right: 30px;">
+                                    <i class="fas fa-code-branch"></i>
+                                </span>
+                                <a class="subtitle" href="https://github.com/jadens-arc/">
+                                    Github
+                                </a>
+                                <br><br>
+                                <span class="icon is-small" style="margin-right: 30px;">
+                                    <i class="fas fa-user-friends"></i>
+                                </span>
+                                <a class="subtitle" href="https://www.linkedin.com/in/jaden-arceneaux">
+                                    LinkedIn
+                                </a>
+                                <br><br>
+                                <p class="subtitle">
+                                    <span class="icon is-small" style="margin-right: 30px;">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                    (702)-600-4785
+                                </p>
+                                <div style="display: float;">
+
+                                    <span class="icon is-small" style="margin-right: 30px;">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                    <a class="subtitle" style="font-size: 13px;">
+                                        arceneauxjaden@gmail.com
+                                    </a>
+                                </div>
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="tile is-child notification is-primary">
+                    <div class="content">
+                        <p class="title">Education
+                            <span class="icon is-large" style="margin-left: 20px;">
+                                <i class="fas fa-school"></i>
+                            </span>
+                        </p>
+                        <div class="content">
+                            <a class="subtitle" href="https://atech.org/">Advanced Technologies Academy High School</a>
+                            <p class="subtitle">2018 - 2022</p>
+                            <p>1411 Robin Street Las Vegas, NV 89106</p>
+                            <p>Duel-Major in Graphic Design & Computer Science</p>
+                            <p>Leader of Developers Club</p>
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent">
+                <div class="tile is-child">
+                    <div class="box">
+                        <div class="content">
+                            <p class="title">Projects
+                                <span class="icon is-large" style="margin-left: 20px;">
+                                    <i class="fas fa-file-code"></i>
+                                </span>
+                            </p>
+                            <div class="content">
+                                <div class="notification">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="subtitle">A-Tech App</h3>
+                                        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+                                            <a class="button is-primary" href="https://github.com/Jadens-arc/Atech-App">On Github</a>
+                                            <a class="button is-primary" href="https://expo.io/@jaden-arceneaux/atech-app-gm">On Expo</a>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 30px;">
+                                        <a class="button is-primary is-light is-small">React Native</a>
+                                        <a class="button is-primary is-light is-small">JavaScript</a>
+                                        <a class="button is-primary is-light is-small">iOS</a>
+                                        <a class="button is-primary is-light is-small">Android</a>
+                                    </div>
+                                        <p>The Official App for Advanced Technologies Academy</p>
+                                    <p>Build in React Native for iOS and Android</p>
+                                </div>
+                                <div class="notification">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="subtitle">MedHelp</h3>
+                                        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+                                            <a class="button is-primary" href="https://github.com/Jadens-arc/MedHelp-js">On Github</a>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 30px;">
+                                        <a class="button is-primary is-light is-small">Electron</a>
+                                        <a class="button is-primary is-light is-small">JavaScript</a>
+                                        <a class="button is-primary is-light is-small">Node.js</a>
+                                        <a class="button is-primary is-light is-small">Bulma CSS</a>
+                                    </div>
+                                    <p>An Desktop application to help people manage their medications</p>
+                                    <p>Build in Electron for Mac, Linux, and Windows</p>
+                                </div>
+                                <div class="notification">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="subtitle">A Re<wbr>imagined Apple Login Page</h3>
+                                        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+                                            <a class="button is-danger" href="https://secure1.store.apple.com/shop/sign_in?c=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3wxYW9zZTQyMmM4Y2NkMTc4NWJhN2U2ZDI2NWFmYWU3NWI4YTJhZGIyYzAwZQ&r=SCDHYHP7CY4H9XK2H&s=aHR0cHM6Ly93d3cuYXBwbGUuY29tL3wxYW9zZTQyMmM4Y2NkMTc4NWJhN2U2ZDI2NWFmYWU3NWI4YTJhZGIyYzAwZQ">Original</a>
+                                            <a class="button is-primary" href="https://apple-web4256.web.app/">My Version</a>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 30px;">
+                                        <a class="button is-primary is-light is-small">HTMl 5</a>
+                                        <a class="button is-primary is-light is-small">CSS</a>
+                                        <a class="button is-primary is-light is-small">Google Firebase</a>
+                                    </div>
+                                    <p>A reimagined Apple login page build using custom HTML and CSS</p>
+                                    <p>Hosted on Firebase</p>
+                                </div>
+                                <div class="notification">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="subtitle">Scripty</h3>
+                                        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+                                            <a class="button is-primary" href="https://github.com/Jadens-arc/Scripty">On Github</a>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 30px;">
+                                        <a class="button is-primary is-light is-small">Python</a>
+                                        <a class="button is-primary is-light is-small">Tkinter</a>
+                                        <a class="button is-primary is-light is-small">Linux</a>
+                                    </div>
+                                    <p>A light-weight IDE made for Linux in Python</p>
+                                    
+                                </div>
+                                <div class="notification">
+                                    <div style="display: flex; justify-content: space-between;">
+                                        <h3 class="subtitle">Built In Sun<wbr>glasses</h3>
+                                        <div style="display:flex; flex-direction: column; margin-left: 10px;">
+                                            <a class="button is-primary" href="https://github.com/Jadens-arc/Built-In-Sunglasses">On Github</a>
+                                            <a class="button is-primary" href="https://medium.com/@arceneauxjaden/adjusting-brightness-on-ubuntu-desktop-8a8e5c54ddfa">On Medium</a>
+                                        </div>
+                                    </div>
+                                    <div style="margin-bottom: 30px;">
+                                        <a class="button is-primary is-light is-small">Python</a>
+                                        <a class="button is-primary is-light is-small">Tkinter</a>
+                                        <a class="button is-primary is-light is-small">Linux</a>
+                                    </div>
+                                    <p>An app that allows for control of monitor brightness on Linux without adjusting the monitor itself</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tile is-parent is-3">
+                <div class="tile is-child notification is-info is-light">
+                    <div class="content">
+                        <p class="title">Skills
+                            <span class="icon is-large" style="margin-left: 20px;">
+                            <i class="fas fa-database"></i>
+                        </span>
+                    </p>
+                    
+                    <div class="content">
+
+                        <b class="subtitle">
+                            
+                            <p id="mainElement">• Python</p>
+                                <p id="subElement">• Django</p>
+                                <p id="subElement">• Flask</p>
+                                <p id="subElement">• Tkinter</p>
+                            <p id="mainElement">• Java</p>
+                            <p id="mainElement">• JavaScript</p>
+                                <p id="subElement">• React Native</p>
+                                <p id="subElement">• Electron</p>
+                                <p id="subElement">• Node.js</p>
+                            <p id="mainElement">• HTML & CSS</p>
+                                <p id="subElement">• Bootstrap</p>
+                                <p id="subElement">• Bulma</p>
+                                <p id="subElement">• Responsive Web Design</p> 
+                            <p id="mainElement">• Linux</p>
+                            <p id="mainElement">• Apache</p>
+                            <p id="mainElement">• MySQL</p>
+                            <p id="mainElement">• Google Firebase</p>
+                            <p id="mainElement">• Git</p>
+                            <p id="mainElement">• Data Structures</p>
+                                <p id="subElement">• Graphs</p>
+                                <p id="subElement">• Trees</p>
+                                <p id="subElement">• Tries</p>
+                                <p id="subElement">• Linked Lists</p>
+                            <p id="mainElement">• Adobe Suite</p>
+                                <p id="subElement">• Illustrator</p>
+                                <p id="subElement">• Photoshop</p>
+                                <p id="subElement">• Premiere</p>
+                        </b>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+</body>
+
+</html>
