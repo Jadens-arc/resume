@@ -35,11 +35,37 @@
             margin-left: 10px;
         }
         
-        @media (max-width: 500px) {
+        @media (max-width: 700px) {
             #linkBtnCon {
                 flex-direction: column;
             }
+            .box-title {
+                display: flex;
+                justify-content: space-between;
+            }
         }
+        @media (max-height: 600px) {
+            #linkBtnCon {
+                flex-direction: column;
+            }
+            .box-title {
+                display: flex;
+                justify-content: space-between;
+            }
+            .title{
+                font-size: 20px;
+            }
+            li{
+                font-size: 9px;
+                padding: 0px;
+                margin-left: -3vw;
+            }
+            ul{
+                margin-left: 0px;
+                padding: 0px;
+            }
+        }
+
     </style>
 </head>
 
@@ -77,8 +103,8 @@
                         </div>
                     </div>
                     <div class="tile notification is-primary">
-                        <div class="content">
-                            <p class="title">Contact
+                        <div class="content contact">
+                            <p class="title box-title">Contact
                                 <span class="icon is-large" style="margin-left: 20px;">
                                           <i class="fas fa-address-card"></i>
                                 </span>
@@ -98,7 +124,7 @@
                 <br>
                 <div class="tile is-child notification is-primary">
                     <div class="content">
-                        <p class="title">Education
+                        <p class="title box-title">Education
                             <span class="icon is-large" style="margin-left: 20px;">
                                 <i class="fas fa-school"></i>
                             </span>
@@ -114,7 +140,7 @@
                 </div>
                 <div class="tile is-child notification is-primary">
                     <div class="content">
-                        <p class="title">Extra<br>Curricular
+                        <p class="title box-title">Extra<br>Curricular
                             <span class="icon is-large" style="margin-left: 20px;">
                                 <i class="fas fa-chalkboard-teacher"></i>
                             </span>
@@ -131,7 +157,7 @@
             <div class="tile is-parent">
                 <div class="box tile is-child">
                     <div class="content">
-                        <p class="title">Projects
+                        <p class="title box-title">Projects
                             <span class="icon is-large" style="margin-left: 20px;">
                                 <i class="fas fa-file-code"></i>
                             </span>
@@ -245,7 +271,7 @@
                 <div class="tile">
                     <div class="tile is-child notification is-info is-light">
                         <div class="content">
-                            <p class="title">Skills
+                            <p class="title box-title">Skills
                                 <span class="icon is-large" style="margin-left: 20px;">
                                 <i class="fas fa-database"></i>
                             </span>
