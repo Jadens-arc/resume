@@ -1,6 +1,8 @@
 function loadInfo() {
     let username = localStorage.getItem("username");
-    
+    if (username == null){
+        location.replace("/index.html");
+    }
     username = username.replace(
         /\w\S*/g,
         function (txt) {
