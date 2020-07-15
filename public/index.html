@@ -19,56 +19,55 @@
     <link rel="apple-touch-icon" href="https://i.ibb.co/C2FR5Bd/path137.png">
     <style>
 
+      .box-container { 
+        position: absolute;
+
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
       .box {
+        text-align: center;
         transition: all 0.8s ease;
-        width: 50vw;
-        height: 50vh;
-        margin-top: 25vh;
+        background-color: #ffffffff; 
+        
+
       }
       .box:hover{
         transform: translateY(-7px);
         box-shadow: none;
+        background-color: white; 
+
       }
-      h1{
-        width: 40vw; 
-        font-size: 4vw;
+
+      body {
+        min-height: 100vh;
       }
-      a{
-        width: 40vw;
-        font-size: 3vw;
-      }
-      .button{
-        font-size: 3vw;
-        text-align: center;
-      }
-      @media only screen and (max-width: 768px) {
-        #titleBar {
-          flex-direction: column;
-          
+      @media screen and (max-width: 700px) {
+        .box-container {
+          width: 80%;
         }
-        .button {
-          margin-top: 20%;
-          font-size: 20px;
-          padding: 50px;
-        }
-        .box{
-          height: 80vw;
-          width: 70vw;
-          text-align: center;
-        }
-        h1{
-          font-size: 30px;
+        
+      }
+      @media screen and (max-width: 400px) {
+        .box-container {
+          width: 65%;
         }
       }
+
     </style>
     <link type="image/png" rel="icon" href="https://i.ibb.co/C2FR5Bd/path137.png"></link>
   </head>
   <body class="container is-fluid"
     style="display: flex; flex-direction: column; align-content: space-between; width:100%; align-items: center;">
     <script src="app.js"></script>
-    <div class="box">
-      <h1> Hi, I'm Jaden Arceneaux...</h1>
-      <a onclick="googleLogin()" class="button is-primary"> Learn More<wbr> About Me</a>  
+    <div class="box-container">
+      <div class="box">
+        <h1 class="title"> Hi, I'm Jaden Arceneaux<wbr>...</h1>
+        <a onclick="googleLogin()" class="button is-primary subtitle"> Learn More<wbr> About Me</a>  
+      </div>
     </div>
   </body>
 </html>
